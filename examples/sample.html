@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Smiile Publish Sample</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+</head>
+
+<body>
+<h1>Share button samples</h1>
+<button id="smiileShare_1">Publish "Found a nice new game, looking forward to play with you ♟️"</button>
+
+<script src="../dist/smiile-publish.min.js"></script>
+<script>
+    const publisher = new SmiilePublish({apiDomain: 'demo-api.smiile.com'});
+
+    document.getElementById('smiileShare_1').addEventListener('click', () => publisher.publish({
+        description: "Found a nice new game, looking forward to play with you ♟",
+        medias: [
+            'https://upload.wikimedia.org/wikipedia/commons/6/6f/ChessSet.jpg',
+        ]
+    }));
+</script>
+
+</body>
+</html>
