@@ -1,6 +1,6 @@
 # Smiile Publish
 
-Official Smiile library to publish content from an external website (yours ;-).
+Official Smiile library to publish content from an external website (yours ;-) to Smiile.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ Official Smiile library to publish content from an external website (yours ;-).
 ```html
 <!-- Use standard HTML tag to let you customize appearance of your button. -->
 <button id="smiileShare_1">My publication button</button>
-<script src="dist/smiile-publish.min.js"></script>
+<script src="https://unpkg.com/@smiileteam/smiile-publish/dist/smiile-publish.min.js"></script>
 <script>
     const publisher = new SmiilePublish();
     document.getElementById('smiileShare_1').addEventListener('click', () => publisher.publish({
@@ -22,11 +22,11 @@ Official Smiile library to publish content from an external website (yours ;-).
 ### With npm
 
 ```bash
-npm install @smiile/smiile-publish
+npm i @smiileteam/smiile-publish
 ```
 
 ```js
-import {SmiilePublish} from '@smiile/smiile-publish';
+import {SmiilePublish} from '@smiileteam/smiile-publish';
 const publisher = new SmiilePublish();
 document.getElementById('smiileShare_1').addEventListener('click', () => publisher.publish({
     description: "Your content to upload", // The text content and url to upload on your Smiile network
