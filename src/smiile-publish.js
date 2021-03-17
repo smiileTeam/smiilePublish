@@ -11,11 +11,11 @@ export default class SmiilePublish {
         this.popupParams = 'width=630,height=500';
         this.apiVersion = 'v4.0';
 
-        if (typeof params != 'undefined') {
-            if (typeof params.apiDomain != 'undefined') {
+        if (!!params) {
+            if (!!params.apiDomain) {
                 this.apiDomain = params.apiDomain;
             }
-            if (typeof params.popupParams != 'undefined') {
+            if (!!params.popupParams) {
                 this.popupParams = params.popupParams;
             }
         }

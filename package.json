@@ -1,6 +1,6 @@
 {
   "name": "@smiileteam/smiile-publish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add the possibility to publish your content to the Smiile social network within your software.",
   "scripts": {
     "build": "npx webpack --config webpack.config.js",
